@@ -18,7 +18,7 @@ cppfiles = strformat.cpp range.cpp interval.cpp codon.cpp bioseq.cpp fastq.cpp s
 pkginclude_HEADERS = $(only_headers) $(header_forlibs)
 
 lib_LTLIBRARIES = libkemin16s.la
-libkemin_la_SOURCES = $(header_forlibs) $(cppfiles)
-libkemin_la_LDFLAGS = -version-info 0:0:0
+libkemin16s_la_SOURCES = $(header_forlibs) $(cppfiles)
+libkemin16s_la_LDFLAGS = -version-info 0:0:0
 
 SUBDIRS = . seqaln test

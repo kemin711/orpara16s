@@ -1,6 +1,8 @@
 #ifndef NCBITAXONOMY_H
 #define NCBITAXONOMY_H
 
+// (c) 2009 Kemin Zhou at orapra.com
+
 #include "gentree.h"
 #include <string>
 #include <map>

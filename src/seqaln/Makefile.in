@@ -109,7 +109,7 @@ PROGRAMS = $(bin_PROGRAMS)
 am_alnglobal_OBJECTS = alnglobal.$(OBJEXT) scorematrix.$(OBJEXT)
 alnglobal_OBJECTS = $(am_alnglobal_OBJECTS)
 alnglobal_LDADD = $(LDADD)
-alnglobal_DEPENDENCIES = ../libkemin.la
+alnglobal_DEPENDENCIES = ../libkemin16s.la
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
@@ -118,15 +118,15 @@ am_alnglobalparam_OBJECTS = alnglobalparam.$(OBJEXT) \
 	scorematrix.$(OBJEXT)
 alnglobalparam_OBJECTS = $(am_alnglobalparam_OBJECTS)
 alnglobalparam_LDADD = $(LDADD)
-alnglobalparam_DEPENDENCIES = ../libkemin.la
+alnglobalparam_DEPENDENCIES = ../libkemin16s.la
 am_alnlocal_OBJECTS = alnlocal.$(OBJEXT) scorematrix.$(OBJEXT)
 alnlocal_OBJECTS = $(am_alnlocal_OBJECTS)
 alnlocal_LDADD = $(LDADD)
-alnlocal_DEPENDENCIES = ../libkemin.la
+alnlocal_DEPENDENCIES = ../libkemin16s.la
 am_alnlocalmany_OBJECTS = alnlocalmany.$(OBJEXT) scorematrix.$(OBJEXT)
 alnlocalmany_OBJECTS = $(am_alnlocalmany_OBJECTS)
 alnlocalmany_LDADD = $(LDADD)
-alnlocalmany_DEPENDENCIES = ../libkemin.la
+alnlocalmany_DEPENDENCIES = ../libkemin16s.la
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -342,7 +342,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 
 # useless program: bbaln braboualnparam 
-LDADD = ../libkemin.la
+LDADD = ../libkemin16s.la
 AM_CXXFLAGS = -I..
 AM_LDFLAGS = -L..
 alnlocal_SOURCES = alnlocal.cpp scorematrix.h scorematrix.cpp dynalnt.h

@@ -8,7 +8,7 @@ bin_PROGRAMS = alnlocal alnglobal alnlocalmany alnglobalparam
 
 ## test_BINARY=testkmer testChimera testbraboualn testscoremethod testmysql testaln 
 
-LDADD = ../libkemin.la
+LDADD = ../libkemin16s.la
 AM_CXXFLAGS = -I..
 AM_LDFLAGS = -L..
 

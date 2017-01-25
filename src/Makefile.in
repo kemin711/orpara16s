@@ -137,22 +137,23 @@ am__uninstall_files_from_dir = { \
   }
 am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(pkgincludedir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
-libkemin_la_LIBADD =
+libkemin16s_la_LIBADD =
 am__objects_1 =
 am__dirstamp = $(am__leading_dot)dirstamp
 am__objects_2 = strformat.lo range.lo interval.lo codon.lo bioseq.lo \
 	fastq.lo seqaln/scorematrix.lo seqaln/alninfo.lo \
 	seqaln/alnexaminer.lo seqaln/kmer.lo seqaln/kmerhelper.lo \
 	ncbitaxonomy.lo
-am_libkemin_la_OBJECTS = $(am__objects_1) $(am__objects_2)
-libkemin_la_OBJECTS = $(am_libkemin_la_OBJECTS)
+am_libkemin16s_la_OBJECTS = $(am__objects_1) $(am__objects_2)
+libkemin16s_la_OBJECTS = $(am_libkemin16s_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-libkemin_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
-	$(CXXFLAGS) $(libkemin_la_LDFLAGS) $(LDFLAGS) -o $@
+libkemin16s_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(libkemin16s_la_LDFLAGS) \
+	$(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -205,8 +206,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libkemin_la_SOURCES)
-DIST_SOURCES = $(libkemin_la_SOURCES)
+SOURCES = $(libkemin16s_la_SOURCES)
+DIST_SOURCES = $(libkemin16s_la_SOURCES)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -412,9 +413,9 @@ only_headers = stddev.h seqaln/dynalnt.h seqaln/kmert.h gentree.h
 header_forlibs = strformat.h range.h interval.h bioseq.h codon.h fastq.h seqaln/scorematrix.h seqaln/alninfo.h seqaln/alnexaminer.h seqaln/kmer.h seqaln/kmerhelper.h ncbitaxonomy.h
 cppfiles = strformat.cpp range.cpp interval.cpp codon.cpp bioseq.cpp fastq.cpp seqaln/scorematrix.cpp seqaln/alninfo.cpp seqaln/alnexaminer.cpp seqaln/kmer.cpp seqaln/kmerhelper.cpp ncbitaxonomy.cpp
 pkginclude_HEADERS = $(only_headers) $(header_forlibs)
-lib_LTLIBRARIES = libkemin.la
-libkemin_la_SOURCES = $(header_forlibs) $(cppfiles)
-libkemin_la_LDFLAGS = -version-info 0:0:0
+lib_LTLIBRARIES = libkemin16s.la
+libkemin16s_la_SOURCES = $(header_forlibs) $(cppfiles)
+libkemin16s_la_LDFLAGS = -version-info 0:0:0
 SUBDIRS = . seqaln test
 all: all-recursive
 
@@ -501,8 +502,8 @@ seqaln/kmer.lo: seqaln/$(am__dirstamp) \
 seqaln/kmerhelper.lo: seqaln/$(am__dirstamp) \
 	seqaln/$(DEPDIR)/$(am__dirstamp)
 
-libkemin.la: $(libkemin_la_OBJECTS) $(libkemin_la_DEPENDENCIES) $(EXTRA_libkemin_la_DEPENDENCIES) 
-	$(AM_V_CXXLD)$(libkemin_la_LINK) -rpath $(libdir) $(libkemin_la_OBJECTS) $(libkemin_la_LIBADD) $(LIBS)
+libkemin16s.la: $(libkemin16s_la_OBJECTS) $(libkemin16s_la_DEPENDENCIES) $(EXTRA_libkemin16s_la_DEPENDENCIES) 
+	$(AM_V_CXXLD)$(libkemin16s_la_LINK) -rpath $(libdir) $(libkemin16s_la_OBJECTS) $(libkemin16s_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
