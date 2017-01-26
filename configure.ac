@@ -78,6 +78,5 @@ AC_CHECK_FUNCS([pow sqrt strchr strstr])
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile
-                 src/seqaln/Makefile
                  src/test/Makefile])
 AC_OUTPUT

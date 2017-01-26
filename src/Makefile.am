@@ -21,4 +21,4 @@ lib_LTLIBRARIES = libkemin16s.la
 libkemin16s_la_SOURCES = $(header_forlibs) $(cppfiles)
 libkemin16s_la_LDFLAGS = -version-info 0:0:0
 
-SUBDIRS = . seqaln test
+SUBDIRS = . test
